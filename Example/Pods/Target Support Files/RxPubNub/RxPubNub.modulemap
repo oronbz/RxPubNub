@@ -1,0 +1,6 @@
+framework module RxPubNub {
+  umbrella header "RxPubNub-umbrella.h"
+
+  export *
+  module * { export * }
+}

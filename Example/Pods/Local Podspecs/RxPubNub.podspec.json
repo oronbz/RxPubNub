@@ -1,0 +1,34 @@
+{
+  "name": "RxPubNub",
+  "version": "0.1.0",
+  "summary": "A RxSwift wrapper for PubNub.",
+  "description": "A lightweight extension to PubNub to pub/sub channel messages using RxSwift observables.",
+  "homepage": "https://github.com/oronbz/RxPubNub",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Oron Ben Zvi": "oronbz@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/oronbz/RxPubNub.git",
+    "tag": "0.1.0"
+  },
+  "social_media_url": "https://twitter.com/oronbz",
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "RxPubNub/Classes/**/*",
+  "dependencies": {
+    "PubNub": [
+      "~> 4.0"
+    ],
+    "RxSwift": [
+      "~> 3.6.1"
+    ],
+    "RxCocoa": [
+      "~> 3.6.1"
+    ]
+  }
+}
