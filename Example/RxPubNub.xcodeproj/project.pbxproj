@@ -41,10 +41,10 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		749580EC8A5C459E107F3E6E /* Pods-RxPubNub_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxPubNub_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxPubNub_Tests/Pods-RxPubNub_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		B87AA2A920A3A17B3AFD195A /* Pods_RxPubNub_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxPubNub_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BFD8D637C1EF0CC194DF11DE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		DA54E27F0947FFB8EE0691AB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		BFD8D637C1EF0CC194DF11DE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		DA54E27F0947FFB8EE0691AB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		E16013E85AB3BB8154086430 /* Pods-RxPubNub_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxPubNub_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxPubNub_Tests/Pods-RxPubNub_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		FB566D29DD2F54ECDD33BEEA /* RxPubNub.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = RxPubNub.podspec; path = ../RxPubNub.podspec; sourceTree = "<group>"; };
+		FB566D29DD2F54ECDD33BEEA /* RxPubNub.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = RxPubNub.podspec; path = ../RxPubNub.podspec; sourceTree = "<group>"; };
 		FC5BCC4949CD644A09A2F31C /* Pods-RxPubNub_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxPubNub_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxPubNub_Example/Pods-RxPubNub_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		FEFDB2AFB2579E864F880E6A /* Pods_RxPubNub_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxPubNub_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -304,11 +304,17 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-RxPubNub_Example/Pods-RxPubNub_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PubNub/PubNub.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxPubNub/RxPubNub.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PubNub.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxPubNub.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -462,6 +468,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -501,6 +508,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

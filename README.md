@@ -22,7 +22,7 @@ pod "RxPubNub"
 
 ## Author
 
-oronbz, oronbz@gmail.com
+Oron Ben Zvi, oronbz@gmail.com
 
 ## License
 
